@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flowlist — Organize Your Day</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="landing.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="splash" id="splash">
+        <div class="splash-logo">
+            <svg class="logo-svg" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <polygon class="logo-hex" points="60,8 107,34 107,86 60,112 13,86 13,34" stroke="#e8d5b0"
+                    stroke-width="2.5" fill="none" />
+                <path class="logo-path1" d="M38 60 L52 74 L82 44" stroke="#c9a84c" stroke-width="4"
+                    stroke-linecap="round" stroke-linejoin="round" fill="none" />
+                <line class="logo-line1" x1="28" y1="48" x2="44" y2="48" stroke="#e8d5b0" stroke-width="1.5"
+                    stroke-linecap="round" opacity="0.6" />
+                <line class="logo-line2" x1="28" y1="60" x2="36" y2="60" stroke="#e8d5b0" stroke-width="1.5"
+                    stroke-linecap="round" opacity="0.4" />
+                <line class="logo-line3" x1="28" y1="72" x2="42" y2="72" stroke="#e8d5b0" stroke-width="1.5"
+                    stroke-linecap="round" opacity="0.3" />
+            </svg>
+            <div class="splash-wordmark">
+                <span class="splash-word1">Flow</span><span class="splash-word2">list</span>
+            </div>
+            <div class="splash-tagline">get things done</div>
+        </div>
+        <div class="splash-bar">
+            <div class="splash-fill"></div>
+        </div>
+    </div>
+
+    <nav class="nav" id="mainNav">
+        <a href="index.html" class="nav-logo">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+                <polygon points="20,3 36,12 36,28 20,37 4,28 4,12" stroke="currentColor" stroke-width="1.8"
+                    fill="none" />
+                <path d="M13 20 L17 24 L27 14" stroke="#c9a84c" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" fill="none" />
+            </svg>
+            <span>Flow<strong>list</strong></span>
+        </a>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#how">How it works</a>
+            <a href="#pricing">Pricing</a>
+        </div>
+        <a href="app.html" class="nav-cta">Open App →</a>
+        <button class="nav-burger" id="navBurger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#features" class="mm-link">Features</a>
+        <a href="#how" class="mm-link">How it works</a>
+        <a href="#pricing" class="mm-link">Pricing</a>
+        <a href="app.html" class="mm-cta">Open App →</a>
+    </div>
+
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="hero-orb hero-orb1"></div>
+            <div class="hero-orb hero-orb2"></div>
+            <div class="hero-grid"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge reveal">✦ Your productivity, elevated</div>
+            <h1 class="hero-title reveal">
+                Stop juggling.<br />
+                <em>Start flowing.</em>
+            </h1>
+            <p class="hero-sub reveal">
+                Flowlist is a beautifully crafted task manager that helps you capture ideas,
+                track progress, and finish what you started — without the noise.
+            </p>
+            <div class="hero-actions reveal">
+                <a href="app.html" class="btn-primary">Get Started Free</a>
+                <a href="#how" class="btn-ghost">See how it works ↓</a>
+            </div>
+            <div class="hero-meta reveal">
+                <span>✓ No account needed</span>
+                <span>✓ Works offline</span>
+                <span>✓ Always free</span>
+            </div>
+        </div>
+        <div class="hero-mockup reveal">
+            <div class="mockup-card">
+                <div class="mockup-header">
+                    <div class="mockup-dots"><span></span><span></span><span></span></div>
+                    <span class="mockup-title-text">Today's Flow</span>
+                </div>
+                <div class="mockup-tasks">
+                    <div class="mockup-task done"><span class="mt-check">✓</span><span>Design the landing page</span>
+                    </div>
+                    <div class="mockup-task done"><span class="mt-check">✓</span><span>Review team feedback</span></div>
+                    <div class="mockup-task active"><span class="mt-dot"></span><span>Finalize Q4 roadmap</span></div>
+                    <div class="mockup-task"><span class="mt-dot"></span><span>Send weekly report</span></div>
+                    <div class="mockup-task"><span class="mt-dot"></span><span>Schedule design review</span></div>
+                </div>
+                <div class="mockup-footer">
+                    <div class="mockup-prog">
+                        <div class="mockup-prog-fill"></div>
+                    </div>
+                    <span>2 of 5 done</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="section-label reveal">What makes it different</div>
+        <h2 class="section-title reveal">Designed for <em>focus,</em><br />built for <em>flow</em></h2>
+
+        <div class="features-grid">
+            <div class="feat-card reveal">
+                <div class="feat-icon">◈</div>
+                <h3>Instant capture</h3>
+                <p>Add tasks in a single keystroke. No forms, no friction — just type and press Enter.</p>
+            </div>
+            <div class="feat-card reveal">
+                <div class="feat-icon">◎</div>
+                <h3>Smart filters</h3>
+                <p>Slice your list by status instantly. See what's done, what's pending, or everything at once.</p>
+            </div>
+            <div class="feat-card reveal">
+                <div class="feat-icon">◉</div>
+                <h3>Progress at a glance</h3>
+                <p>A live progress bar and stat counters show you how far you've come, keeping motivation high.</p>
+            </div>
+            <div class="feat-card reveal">
+                <div class="feat-icon">❋</div>
+                <h3>Celebration moments</h3>
+                <p>Finishing tasks feels great. Flowlist rewards you with a burst of confetti every time you do.</p>
+            </div>
+            <div class="feat-card reveal">
+                <div class="feat-icon">⟳</div>
+                <h3>Persists forever</h3>
+                <p>Your tasks are saved locally. Close the tab, come back later — everything is still there.</p>
+            </div>
+            <div class="feat-card reveal">
+                <div class="feat-icon">✦</div>
+                <h3>Beautiful by default</h3>
+                <p>No settings, no clutter. Just a refined, warm interface that's a pleasure to use every day.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="how" id="how">
+        <div class="how-inner">
+            <div class="section-label reveal">Simple by design</div>
+            <h2 class="section-title reveal">Three steps to <em>clarity</em></h2>
+            <div class="steps">
+                <div class="step reveal">
+                    <div class="step-num">01</div>
+                    <div class="step-body">
+                        <h3>Add your tasks</h3>
+                        <p>Type anything — a project, a reminder, an idea. Hit Enter. It's that fast.</p>
+                    </div>
+                </div>
+                <div class="step-divider reveal"></div>
+                <div class="step reveal">
+                    <div class="step-num">02</div>
+                    <div class="step-body">
+                        <h3>Work through them</h3>
+                        <p>Check off tasks as you complete them. Edit or remove anything that changes.</p>
+                    </div>
+                </div>
+                <div class="step-divider reveal"></div>
+                <div class="step reveal">
+                    <div class="step-num">03</div>
+                    <div class="step-body">
+                        <h3>Celebrate & repeat</h3>
+                        <p>Watch your progress bar fill up. Clear the done pile and start a fresh flow tomorrow.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+        <div class="section-label reveal">Simple pricing</div>
+        <h2 class="section-title reveal">Always <em>free.</em><br />No catch.</h2>
+        <div class="pricing-cards">
+            <div class="price-card free reveal">
+                <div class="price-tag">Free</div>
+                <div class="price-amount">$0<span>/forever</span></div>
+                <ul class="price-features">
+                    <li>✓ Unlimited tasks</li>
+                    <li>✓ Smart filters</li>
+                    <li>✓ Progress tracking</li>
+                    <li>✓ Local storage</li>
+                    <li>✓ Works offline</li>
+                    <li>✓ No account required</li>
+                </ul>
+                <a href="app.html" class="btn-primary">Start now →</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-band">
+        <div class="cta-orb"></div>
+        <h2 class="reveal">Ready to find your flow?</h2>
+        <p class="reveal">Open the app and add your first task in 10 seconds.</p>
+        <a href="app.html" class="btn-primary reveal">Open Flowlist →</a>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-logo">
+            <svg viewBox="0 0 40 40" fill="none" width="24" height="24">
+                <polygon points="20,3 36,12 36,28 20,37 4,28 4,12" stroke="currentColor" stroke-width="1.8"
+                    fill="none" />
+                <path d="M13 20 L17 24 L27 14" stroke="#c9a84c" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" fill="none" />
+            </svg>
+            Flow<strong>list</strong>
+        </div>
+        <p class="footer-copy">© 2026 Flowlist. Made with care.</p>
+    </footer>
+
+    <script src="nav.js"></script>
+    <script src="landing.js"></script>
+</body>
+
+</html>
